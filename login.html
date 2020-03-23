@@ -1,70 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>IFL</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="login_register/css/style.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="for_login/css/style.css">
 </head>
 
 <body>
+    <div class="main">
+        <div style="margin-top: -30px; text-align: center;">
+            <h1 style="font-size: 70px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">IFL</h1>
+        </div>
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="for_login/images/signin-image.jpg" alt="sing up image"></figure>
+                    </div>
 
-	<div class="wrapper d-flex align-items-stretch">
-		<nav id="sidebar" class="order-last" class="img">
-			<div class="custom-menu">
-				<button type="button" id="sidebarCollapse" class="btn btn-primary"></button>
-			</div>
-			<div class="">
-				<h1><a href="index.html" class="logo" style="font-style: italic; ">IFL <span>I found love</span></a></h1>
+                    <div class="signin-form">
+                        <h2 class="form-title">Log in</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name" style="font-size: 16px;" />
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password" style="font-size: 16px;"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
 
-				<form action="#">
-					
-					<div class="form-group">
-						<label style="margin-left: 10px; font-size: 18px; font-weight: 500;" for="email">Email address:</label>
-						<input type="email" class="form-control" placeholder="Enter email" id="email"
-							style="font-size: 16px; width: 350px;">
-					</div>
-					<div class="form-group">
-						<label style="margin-left: 10px; font-size: 18px; font-weight: 500;" for="pwd">Password:</label>
-						<input type="password" class="form-control" placeholder="Enter password" id="pwd"
-							style="font-size: 16px;  width: 350px;">
-					</div>
-					<div class="form-group form-check">
-						<label style="margin-left: 10px;" class="form-check-label">
-							<input class="form-check-input" type="checkbox"> Remember me
-						</label>
-					</div>
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" style="font-size: 16px;"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" style="font-size: 16px;"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" style="font-size: 16px;"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" style="font-size: 16px;"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="for_login/images/signup-image.jpg" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<a href="home.html">
-						<button style="margin-left: 10px;" type="submit" class="btn btn-primary" id="button-login">Log in</button>
-					</a>
-					<a href="register.html" style="margin-left: 10px;">sign up</a>
-				</form>
-			</div>
-		</nav>
-		
+    </div>
 
-		<!-- Page Content  -->
-		<div id="content" class="p-4 p-md-5 pt-5">
-			<h2 class="mb-4">Welcome.....</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>	
-		</div>
-	</div>
-
-	<script src="login_register/js/jquery.min.js"></script>
-	<script src="login_register/js/popper.js"></script>
-	<script src="login_register/js/bootstrap.min.js"></script>
-	<script src="login_register/js/main.js"></script>
-</body>
-
+    <!-- JS -->
+    <script src="for_login/vendor/jquery/jquery.min.js"></script>
+    <script src="for_login/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
