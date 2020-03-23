@@ -43,6 +43,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -57,7 +58,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: rgb(230, 250, 192); }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -74,6 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
+  font-size: 17px;
+  color: black;
+  text-align: justify;
   margin-bottom: 1rem; }
 
 abbr[title],
@@ -8215,8 +8219,10 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 270px;
   max-width: 270px;
-  max-height: 500px;
-  background: #58d838;
+  max-height: 565px;
+  background-color: #0eca00;
+  background-image: linear-gradient(179deg, #0eca00 0%, #c7dc00 100%);
+  border-radius: 8px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -8367,9 +8373,16 @@ a[data-toggle="collapse"] {
 
 footer{
   width: 100%;
-  background-color: #58d838;
+  background-color: #8DF228;
   padding: 20px 0px;
   text-align: center;
   position: relative;
   clear: both;
+}
+
+#allpagenavbar{
+  background-color: #8DF228; 
+  border-radius: 15px; position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
