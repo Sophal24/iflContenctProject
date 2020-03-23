@@ -8215,7 +8215,11 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 270px;
   max-width: 270px;
-  background: #39bb18;
+  max-height: 500px;
+  background: #58d838;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8278,7 +8282,7 @@ h1, h2, h3, h4, h5,
           #sidebar ul li a span {
             display: block; } }
       #sidebar ul li a:hover {
-        color: #fff; }
+        color: rgb(134, 125, 125); }
     #sidebar ul li.active > a {
       background: transparent;
       color: #fff; }
@@ -8360,3 +8364,12 @@ a[data-toggle="collapse"] {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #ffffff;}
+
+footer{
+  width: 100%;
+  background-color: #58d838;
+  padding: 20px 0px;
+  text-align: center;
+  position: relative;
+  clear: both;
+}
